@@ -1,0 +1,25 @@
+from django.shortcuts import render, redirect
+from .models import Entry
+from .forms import EntryForm
+
+# Create your views here.
+def index(request):
+  entries = Entry.objects.order_by('-date_posted')
+  context = {'entries': entries}
+  
+  # return template
+  return render(request, 'diary_app/index.html', context)
+
+def add(request):
+  if request.method == 'POST':
+    form = EntryForm(request.POST)
+    
+    if form.is_valid():
+      form.save()
+      return redirect('diary')
+  else:
+    form = EntryForm()
+  
+  context = {'form': form}
+  
+  return render(request, 'diary_app/add.html', context)

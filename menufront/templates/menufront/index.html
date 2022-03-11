@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HSI SandBox Level 3 Wiwin Mafiroh</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'menufront/css/style.css' %}" />
+  </head>
+  <body>
+    <div class="card-item">
+      <h1>HSI SandBox Level 3 - Wiwin Mafiroh</h1>
+      <div class="link-item">
+        <p>
+          <a href="{% url 'diary' %}">Diary</a>
+        </p>
+        <p>
+          <a href="{% url 'weather' %}">Weather</a>
+        </p>
+        <p>
+          <a href="{% url 'poll' %}">Poll</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hubballi", cursive;
+}
+
+body {
+  background-color: #f8f8e6;
+}
+
+.card-item {
+  width: 50%;
+  height: 30vh;
+  margin: 2rem auto;
+  padding: 20px;
+}
+
+.card-item h1 {
+  font-size: 2.7rem;
+  color: #8e806a;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.card-item p {
+  background-color: #00d1b2;
+  display: flex;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 50px;
+  box-shadow: 0px 2px 2px 0px white;
+}
+
+.card-item p:active {
+  position: relative;
+  top: 2px;
+}
+
+.card-item a {
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.card-item a:hover {
+  background-color: #8e806a;
+  color: #fbf8f1;
+  border-radius: 50px;
+}
+
+/* Smartphone */
+@media only screen and (max-width: 600px) {
+  .card-item {
+    width: 90%;
+    height: auto;
+    margin: 3rem auto;
+  }
+
+  .card-item h1 {
+    font-size: 8vw;
+  }
+
+  .card-item p {
+    margin-bottom: 1rem;
+  }
+
+  .card-item a {
+    font-size: 1.5rem;
+  }
+
+  /* .card-item a:hover {
+    background-color: #8e806a;
+    color: #fbf8f1;
+    border-radius: 50px;
+  } */
+}
