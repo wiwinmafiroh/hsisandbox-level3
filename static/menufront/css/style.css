@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f8f8e6;
+  background-color: #ffffff;
 }
 
 .card-item {
@@ -39,8 +39,8 @@ body {
 .card-item a {
   padding: 1rem;
   font-size: 2rem;
-  font-weight: bold;
   color: white;
+  font-weight: bold;
   text-decoration: none;
   display: block;
   width: 100%;
