@@ -88,7 +88,7 @@ DATABASES = {
         'HOST': 'ec2-52-70-186-184.compute-1.amazonaws.com',
         'PORT': 5432,
         'USER': 'grlpyodalrurcg',
-        'PASSWORD': '',
+        'PASSWORD': '0e4e0db5a1a1ae530b1693254b326e4a1e8fc567380db2e282cabb8a18a5d2af',
     }
 }
 # if os.environ.get('DATABASE_URL'):
