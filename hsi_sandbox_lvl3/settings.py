@@ -84,12 +84,17 @@ WSGI_APPLICATION = 'hsi_sandbox_lvl3.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'df846fd6ql8cl4',
+        'HOST': 'ec2-52-70-186-184.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'grlpyodalrurcg',
+        'PASSWORD': '',
     }
 }
 # if os.environ.get('DATABASE_URL'):
 #     DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
-db_from_env = dj_database_url.config(conn_max_age=600, ssl_require=True)
-DATABASES['default'].update(db_from_env)
+# db_from_env = dj_database_url.config(conn_max_age=600, ssl_require=True)
+# DATABASES['default'].update(db_from_env)
 
 
 # Password validation
